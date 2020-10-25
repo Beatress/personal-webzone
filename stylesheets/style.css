@@ -1,0 +1,31 @@
+/* TODO remove */
+* { outline: 1px dotted red }
+
+/* TODO style clickable images */
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas:
+  "nav header header"
+  "nav content sidebar"
+  "nav footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
