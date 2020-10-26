@@ -1,10 +1,15 @@
 /* TODO remove */
-* { outline: 1px dotted red }
+* {
+  outline: 1px dotted red;
+}
 
 /* TODO style clickable images */
 
+body
+  font-family: "Lucida Console", Monaco, monospace;
+}
 
-
+/* Grids and Flexboxen */
 .container {
   display: grid;
   height: 100%;
@@ -32,6 +37,37 @@
   grid-area: footer;
 }
 
+.flexbox-nav {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.flexbox-footer {
+  display: flex;
+  width: 100%
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+/* Positioning tweaks */
+.copyleft {
+  flex-align: center;
+  align-self: center;
+}
+
+/* Decoration */
+
+em {
+  font-size: 1.1em;
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+}
+
 strong {
-  font-size: 2rem;
+  font-size: 2em;
+  Font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
 }
