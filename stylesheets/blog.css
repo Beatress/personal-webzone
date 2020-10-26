@@ -1,0 +1,17 @@
+.entry {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.image {
+  object-fit: contain;
+  align-self: flex-start;
+  width: 300px;
+}
+
+.text {
+  flex: 1 1 auto;
+  object-fit: fill;
+  
+}
