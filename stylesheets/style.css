@@ -3,15 +3,17 @@
 
 /* TODO style clickable images */
 
+
+
 .container {
   display: grid;
   height: 100%;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-columns: 2fr 10fr 1fr;
   grid-template-rows: 80px auto 80px;
   grid-template-areas:
-  "nav header header"
+  "nav header sidebar"
   "nav content sidebar"
-  "nav footer footer";
+  "nav footer sidebar";
 }
 
 .header {
@@ -28,4 +30,8 @@
 
 .footer {
   grid-area: footer;
+}
+
+strong {
+  font-size: 2rem;
 }
