@@ -1,17 +1,15 @@
+/* TODO fix text size when images and text are side by side */
+
 .entry {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  object-fit: contain;
-  align-self: flex-start;
-  width: 300px;
+  flex-basis: 80%;
 }
 
 .text {
-  flex: 1 1 auto;
-  object-fit: fill;
-  
+  font-size: 1.1em;
 }
