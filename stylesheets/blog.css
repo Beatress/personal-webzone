@@ -7,9 +7,26 @@
 }
 
 .image {
-  flex-basis: 80%;
+  flex-basis: auto;
 }
 
 .text {
-  font-size: 1.1em;
+  font-size: 1.3em;
+  width: 50%;
+}
+
+.blog-item {
+  background-color: #1B1E1F;
+}
+
+.avi-logo {
+  background-color: #fff;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+ul li {
+  font-size: 1.3em;
 }
