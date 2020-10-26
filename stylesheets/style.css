@@ -1,20 +1,24 @@
 /* TODO remove */
-* {
-  outline: 1px dotted red;
-}
+
 
 /* TODO style clickable images */
 
-body
+/* TODO make all colors web safe */
+
+body {
   font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1.8vw;
+  color: #20C20E;
+  background-color: #000;
 }
 
 /* Grids and Flexboxen */
 .container {
   display: grid;
   height: 100%;
-  grid-template-columns: 2fr 10fr 1fr;
+  grid-template-columns: 1.5fr 10fr 1fr;
   grid-template-rows: 80px auto 80px;
+  grid-gap: 3px;
   grid-template-areas:
   "nav header sidebar"
   "nav content sidebar"
@@ -27,6 +31,7 @@ body
 
 .nav {
   grid-area: nav;
+  padding: 10px;
 }
 
 .content {
@@ -47,7 +52,7 @@ body
 
 .flexbox-footer {
   display: flex;
-  width: 100%
+  width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -70,4 +75,51 @@ em {
 strong {
   font-size: 2em;
   Font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+
+.nav-btn {
+    background-color: #A9A9A9;
+    padding: 8px 20px;
+    color: #484848;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+  }
+
+a:visited {
+    color: #ffff33;
+  }
+
+a {
+    color: #ff9900;
+}
+
+a.img:hover {
+    cursor: pointer;
+}
+
+a.img {
+    border-radius: 1px;
+}
+
+.nav-btn a {
+  color: #484848;
+  text-decoration: none;
+  font-size: 0.87em
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
